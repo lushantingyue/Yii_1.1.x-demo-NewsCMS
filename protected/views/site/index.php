@@ -5,7 +5,7 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
+<p> 您可通过该URL: '?r=thememaker/newTheme'访问主题化页面. </p>
 <p>Congratulations! You have successfully created your Yii application.</p>
 
 <p>You may change the content of this page by modifying the following two files:</p>

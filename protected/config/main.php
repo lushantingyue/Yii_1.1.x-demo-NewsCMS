@@ -8,7 +8,8 @@
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'Yii_Go_part2',
-
+    // theme and skin
+    'theme' => 'acalia',
     // preloading 'log' component
     'preload' => array('log'),
 
@@ -30,7 +31,7 @@ return array(
 
 //        添加加载 Admin模块
         'Admin' => array(
-            'class' =>'application.modules.Admin.AdminModule'
+            'class' => 'application.modules.Admin.AdminModule'
         ),
     ),
 
@@ -73,9 +74,12 @@ return array(
 
                 array(
                     'class' => 'CWebLogRoute',
-//                    配置 显示DB操作log信息
-                    'levels' => 'trace',
-                    'categories'=>'system.db.*',
+                    // 配置 显示DB操作log信息
+                    // 'levels' => 'trace',
+                    'levels' => 'trace, info, error, warning, xdebug',
+                    'showInFireBug' => true,
+                    //  显示数据库操作
+                    'categories' => 'system.db.*',
                 ),
 
             ),
@@ -87,6 +91,6 @@ return array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
-        'adminEmail' => 'webmaster@example.com',
+        'adminEmail' => 'diyikehan@126.com',
     ),
 );
