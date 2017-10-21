@@ -23,5 +23,5 @@
 ##### |-log,xdebug 控制台console调试信息
 ##### |-模板复用(需要重新配置 css/js/images的解析路径, 用到全局参数baseUrl)
 ##### |-免费模板的使用, 配置主题(理解controller->themes->view/layout的解析过程)
-##### |-文件上传
-##### |-ajax异步上传
+##### |-文件上传（wiki： http://www.yiiframework.com/wiki/2/how-to-upload-a-file-using-a-model）
+##### |-ajax异步上传（jquery-file-upload的使用）
